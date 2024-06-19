@@ -1,8 +1,9 @@
+import NavBar from "./components/structural/NavBar";
 
 export default function App() {
   return (
-    <div className="font-poppins">
-      <p>Hello World!</p>
+    <div className="bg-dark w-screen h-screen flex flex-col font-poppins"> {/* Whole Screen Wrapper Div*/}
+      <NavBar></NavBar>
     </div>
   );
 }
