@@ -1,6 +1,15 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Logo() {
+    const navigate = useNavigate();
+    const handleRedirect = () => {
+        navigate("/");
+    };
     return (
-        <div className="align-bottom shrink-0 cursor-pointer w-[16rem] ml-[4rem]">
+        <div
+            className="flex shrink-0 cursor-pointer w-[16rem] ml-[4rem]"
+            onClick={handleRedirect}
+        >
             {" "}
             {/* Wrapping Div */}
             <svg
