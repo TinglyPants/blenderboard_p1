@@ -1,8 +1,8 @@
-export default function Logo(){
+export default function Logo() {
     return (
-        <div
-            className="align-bottom shrink-0 cursor-pointer w-[16rem] ml-[4rem]"
-        > { /* Wrapping Div */}
+        <div className="align-bottom shrink-0 cursor-pointer w-[16rem] ml-[4rem]">
+            {" "}
+            {/* Wrapping Div */}
             <svg
                 id="Layer_2"
                 data-name="Layer 2"
