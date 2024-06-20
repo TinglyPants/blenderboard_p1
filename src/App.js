@@ -1,10 +1,12 @@
 import CreatePostButton from "./components/structural/CreatePostButton";
 import Logo from "./components/structural/Logo";
+import MainContent from "./components/structural/MainContent";
 import NavBar from "./components/structural/NavBar";
 import Profile from "./components/structural/Profile";
 import SearchBar from "./components/structural/SearchBar";
 import SideBar from "./components/structural/SideBar";
 import SideBarItem from "./components/structural/SideBarItem";
+import { Route, Routes } from "react-router-dom";
 
 export default function App() {
     return (
@@ -51,6 +53,34 @@ export default function App() {
                         }}
                     />
                 </SideBar>
+                <MainContent>
+                    {" "}
+                    {/* Main Content Wrapper */}
+                    <Routes>
+                        {" "}
+                        {/* React Router Wrapper */}
+                        <Route path="/" element={"Home Test"} />
+                        <Route
+                            path="/search-results"
+                            element={"Search Results"}
+                        />
+                        <Route path="/account" element={"Account Test"} />
+                        <Route
+                            path="/create-post"
+                            element={"Post creation Test"}
+                        />
+                        <Route
+                            path="/view-post"
+                            element={"Post viewing Test"}
+                        />
+                        <Route
+                            path="/edit-post"
+                            element={"Post editing Test"}
+                        />
+                        <Route path="/login" element={"Login Test"} />
+                        <Route path="/signup" element={"Signup Test"} />
+                    </Routes>
+                </MainContent>
             </div>
         </div>
     );
