@@ -1,7 +1,7 @@
 export default function SvgIcon({ path, name, onClick }) {
     return (
         <svg
-            className="w-8 h-8 stroke-white mx-2 group-hover:stroke-highlight hover:stroke-highlight"
+            className="w-max h-max stroke-white mx-2 group-hover:stroke-highlight hover:stroke-highlight"
             viewBox="0 0 24 24"
             fill="none"
             title={name}
