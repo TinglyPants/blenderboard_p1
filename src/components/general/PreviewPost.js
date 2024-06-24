@@ -20,7 +20,7 @@ export default function PreviewPost({ title, thumbnailURL }) {
                 </div>
             </div>
             {/* Main Image */}
-            <div className="max-h-[50rem] bg-black m-[1rem] rounded-xl flex flex-col items-center">
+            <div className="max-h-[50rem] bg-black mx-[1rem] mt-[1rem]  rounded-xl flex flex-col items-center">
                 <img
                     className="object-scale-down h-full"
                     alt="Preview Post"
@@ -51,7 +51,7 @@ export default function PreviewPost({ title, thumbnailURL }) {
                     </div>
                 </div>
                 {/* Right Buttons */}
-                <div className="h-[3.6rem] flex flex-row-reverse">
+                <div className="h-[3.6rem] flex flex-row-reverse ">
                     <div className="size-[3.6rem]">
                         <SvgIcon
                             name="hide"
