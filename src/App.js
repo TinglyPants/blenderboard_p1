@@ -1,3 +1,4 @@
+import PostCreation from "./components/pages/PostCreation";
 import CreatePostButton from "./components/structural/CreatePostButton";
 import Logo from "./components/structural/Logo";
 import MainContent from "./components/structural/MainContent";
@@ -10,7 +11,7 @@ import { Route, Routes } from "react-router-dom";
 
 export default function App() {
     return (
-        <div className="bg-dark w-screen h-screen flex flex-col font-poppins">
+        <div className="bg-black w-screen h-screen flex flex-col font-poppins">
             {" "}
             {/* Whole Screen Wrapper Div*/}
             <NavBar>
@@ -22,7 +23,7 @@ export default function App() {
                     imageURL="https://images.pexels.com/photos/982300/pexels-photo-982300.jpeg?auto=compress&cs=tinysrgb&w=600"
                 />
             </NavBar>
-            <div className="flex flex-row h-full">
+            <div className="flex flex-row h-full overflow-hidden">
                 {" "}
                 {/* Container for sidebar and main content (required for flex box) */}
                 <SideBar>
@@ -57,10 +58,7 @@ export default function App() {
                             element={"Search Results"}
                         />
                         <Route path="/account" element={"Account Test"} />
-                        <Route
-                            path="/create-post"
-                            element={"Post creation Test"}
-                        />
+                        <Route path="/create-post" element={<PostCreation />} />
                         <Route
                             path="/view-post"
                             element={"Post viewing Test"}
